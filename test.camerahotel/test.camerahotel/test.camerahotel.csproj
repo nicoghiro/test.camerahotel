@@ -21,4 +21,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Camere.Hotel">
+      <HintPath>..\..\Camere.Hotel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
