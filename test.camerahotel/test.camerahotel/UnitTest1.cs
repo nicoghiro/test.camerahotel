@@ -73,9 +73,10 @@ namespace Camere.Hotel
             Camera camera = new Camera("123", 24, 1, true, true, true, 120, 1);
             Camera camera2 = new Camera("124", 24, 1, true, true, true, 140, 1);
             Assert.True(camera.confronta_Prezzo(camera2) == "la camera più conveniente è quella numero 123");
-            Assert.True(camera2.confronta_Prezzo(camera) == "la camera più conveniente è quella numero 123");
+            Assert.True(camera2.confronta_Prezzo(camera) == "la camera più conveniente è quella numero 123");                    
             Camera camera3 = new Camera("123", 24, 1, true, true, true, 140, 1);
             Camera camera4 = new Camera("124", 24, 1, true, true, true, 120, 1);
+
             Assert.False(camera3.confronta_Prezzo(camera4) == "la camera più conveniente è quella numero 123");
             Assert.False(camera4.confronta_Prezzo(camera3) == "la camera più conveniente è quella numero 123");
 
